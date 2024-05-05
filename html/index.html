@@ -70,10 +70,18 @@ $(function() {
 Description</h1>
 <p>A code that solves the Tower of Hanoi game for the final project</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
+Algorithm</h1>
+<p>Classic tower of hanoi algorithm using recursion. If <code>T(s,m,e,n)</code> be the solution of the tower of hanoi problem with starting rod <code>s</code>, ending rod <code>e</code>, and buffer rod <code>m</code> with disk <code>n</code>. Then the solution for <code>n+1</code> disk can be constructed with</p>
+<div class="fragment"><div class="line">T(s,m,e,n+1) :=</div>
+<div class="line">    T(s,e,m,n)</div>
+<div class="line">    Move the bottom-most disk from s to e</div>
+<div class="line">    T(m,e,s,n)</div>
+</div><!-- fragment --><p> The program must terminate, and the only limitation is <code>ndisk</code> being too large, causing a stack overflow in the recursive function call. </p>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Compile</h1>
 <p>Run <code>make all</code> to make all</p>
 <p>To clean the object files, run <code>make clean</code></p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Testing</h1>
 <p>To compile the unit test module <code>make unit_test</code></p>
 <p>To run the test <code>make testing</code> </p>
