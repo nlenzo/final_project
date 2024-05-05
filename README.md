@@ -13,6 +13,13 @@ T(s,m,e,n+1) :=
     T(m,e,s,n)
 ```
 The program must terminate, and the only limitation is `ndisk` being too large, causing a stack overflow in the recursive function call.
+
+## Input
+An integer `ndisk` that specify the number of disk to solve for. 
+
+## Output
+Step-by-step instruction on how to solve the puzzle.
+
 ## Compile 
 Run `make all` to make all
 
