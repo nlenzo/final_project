@@ -3,8 +3,6 @@
 ## Description
 A code that solves the Tower of Hanoi game
 
-## Algorithm
-
 ## Compile 
 Run `make all` to make all
 
