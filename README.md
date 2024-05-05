@@ -1,7 +1,7 @@
 # Final project - Tower of Hanoi
 
 ## Description
-A code that solves the Tower of Hanoi game
+A code that solves the Tower of Hanoi game for the final project
 
 ## Compile 
 Run `make all` to make all
@@ -15,3 +15,4 @@ To compile the unit test module
 
 To run the test
 `make testing`
+
