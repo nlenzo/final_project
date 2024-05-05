@@ -3,6 +3,16 @@
 ## Description
 A code that solves the Tower of Hanoi game for the final project
 
+## Algorithm
+Classic tower of hanoi algorithm using recursion. If `T(s,m,e,n)` be the solution of the tower of hanoi problem with starting rod `s`, ending rod `e`, and buffer rod `m` with disk `n`. Then the solution for `n+1` disk can be constructed with 
+
+```
+T(s,m,e,n+1) :=
+    T(s,e,m,n)
+    Move the bottom-most disk from s to e
+    T(m,e,s,n)
+```
+The program must terminate, and the only limitation is `ndisk` being too large, causing a stack overflow in the recursive function call.
 ## Compile 
 Run `make all` to make all
 
