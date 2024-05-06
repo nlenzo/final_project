@@ -15,10 +15,10 @@ T(s,m,e,n+1) :=
 The program must terminate, and the only limitation is `ndisk` being too large, causing a stack overflow in the recursive function call.
 
 ## Input
-An integer `ndisk` that specify the number of disk to solve for. 
+An integer `ndisk` that specifies the number of disks to solve for. 
 
 ## Output
-Step-by-step instruction on how to solve the puzzle.
+Step-by-step instructions on how to solve the puzzle.
 
 ## Compile 
 Run `make all` to make all
@@ -33,3 +33,13 @@ To compile the unit test module
 To run the test
 `make testing`
 
+If the program does not have error, then it runs without printing anything.
+
+If the program has error, then the assertion fails and the program will quit with an error 
+
+## References
+Hanoi Problem solver Wikipedia page:
+https://en.wikipedia.org/wiki/Tower_of_Hanoi
+
+Allowing Doxygen to recognize C++ function:
+https://linux.m2osw.com/doxygen-does-not-generate-documentation-my-c-functions-or-any-global-function
